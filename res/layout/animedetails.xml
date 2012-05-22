@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/watchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:paddingTop="32dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/episodesTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/watchStatus"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/episodesOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watchStatus"
+            android:layout_toLeftOf="@id/episodesTotal"
+            android:paddingTop="8dp"
+            android:text="@string/ad_of" />
+
+        <TextView
+            android:id="@+id/episodesWatched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watchStatus"
+            android:layout_toLeftOf="@id/episodesOf"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/seriesType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/episodesTotal"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/seriesStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seriesType"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/myScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seriesStatus"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/myScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seriesStatus"
+            android:layout_toLeftOf="@id/myScoreValue"
+            android:paddingTop="8dp"
+            android:text="@string/ad_my_score" />
+
+        <TextView
+            android:id="@+id/malScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/myScoreValue"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/malScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myScoreValue"
+            android:layout_toLeftOf="@id/malScoreValue"
+            android:paddingTop="8dp"
+            android:text="@string/ad_mal_score" />
+
+        <TextView
+            android:id="@+id/malRankValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/malScoreValue"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <TextView
+            android:id="@+id/malRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/malScoreValue"
+            android:layout_toLeftOf="@id/malRankValue"
+            android:paddingTop="8dp"
+            android:text="@string/ad_mal_rank" />
+
+        <TextView
+            android:id="@+id/synopsis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/malRank"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/ad_loading" />
+
+        <ImageView
+            android:id="@+id/animePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/malRank"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/ad_pic_description"
+            android:maxHeight="425.3dp"
+            android:maxWidth="200dp"
+            android:minHeight="425.3dp"
+            android:minWidth="200dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imageplaceholder" />
+    </RelativeLayout>
+
+</ScrollView>

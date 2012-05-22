@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Home!</string>
+    <string name="app_name">DreadfulMAL</string>
+    <string name="fr_title">Link to MAL</string>
+    <string name="fr_hint_user">MAL Username</string>
+    <string name="fr_hint_pass">MAL Password</string>
+    <string name="fr_textblurb">Enter your MAL credentials below. This is required in order to connect to MAL, retrieve your watch lists, update them, etc. These are never sent anywhere but directly to the API, which sends them directly to MAL.</string>
+    <string name="fr_button_signin">Connect to MAL</string>
+    <string name="main_at">\u0020at\u0020</string>
+    <string name="main_of">\u0020of\u0020 </string>
+    <string name="ad_pic_description">Related picture for this anime</string>
+    <string name="ad_loading">...</string>
+    <string name="ad_of">\u0020of\u0020</string>
+    <string name="ad_my_score">my score:\u0020</string>
+    <string name="ad_mal_score">MAL score:\u0020</string>
+    <string name="ad_mal_rank">MAL rank:\u0020</string>
+    <string name="settings">Settings</string>
+    <string-array name="syncFrequencyTitles">
+        <item >Daily</item>
+        <item >Weekly</item>
+    </string-array>
+    <string-array name="syncFrequencyValues">
+        <item >86400000</item>
+        <item >604800000</item>
+    </string-array>
+    <string-array name="listTypesTitles">
+        <item >All Anime</item>
+        <item >Watching</item>
+        <item >Completed</item>
+        <item >On Hold</item>
+        <item >Dropped</item>
+        <item >Planning to Watch</item>
+    </string-array>
+    <string-array name="listTypesValues">
+        <item >all</item>
+        <item >watching</item>
+        <item >completed</item>
+        <item >on-hold</item>
+        <item >dropped</item>
+        <item >plan to watch</item>
+    </string-array>
+    <string name="force_sync">Sync Now</string>
+    <string name="db_anime_table_def">CREATE TABLE if not exists `animeList` (
+  `id` INTEGER UNSIGNED NOT NULL,
+  `title` CHAR(40) NOT NULL,
+  `type` CHAR(40) NOT NULL,
+  `imageUrl` CHAR(40) NOT NULL,
+  `episodes` INTEGER UNSIGNED NOT NULL,
+  `status` CHAR(40) NOT NULL,
+  `watchedEpisodes` INTEGER UNSIGNED NOT NULL,
+  `score` INTEGER UNSIGNED NOT NULL,
+  `watchedStatus` CHAR(40) NOT NULL,
+  `dirty` INTEGER UNSIGNED NOT NULL DEFAULT 0,
+  `memberScore` CHAR(40) DEFAULT NULL,
+  `rank` CHAR(40) DEFAULT NULL,
+  `synopsis` BLOB DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)</string>
+
+</resources>

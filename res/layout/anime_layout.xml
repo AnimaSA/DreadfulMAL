@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIME NAME"
+        android:id="@+id/animeName" 
+        android:textSize="22dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="0dp"
+        android:textColor="?android:textColorPrimary"
+	/>
+
+    <TextView
+        android:id="@+id/status"
+        android:paddingLeft="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animeName"
+     	
+        android:text="WATCH STATUS" />
+    <TextView
+        android:id="@+id/at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="@string/main_at"
+        android:layout_below="@id/animeName"
+        android:layout_toRightOf="@id/status"
+	/>
+   <TextView
+        android:id="@+id/watchCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="epsWatched"
+        android:layout_below="@id/animeName"
+        android:layout_toRightOf="@id/at"
+	/>
+   <TextView
+        android:id="@+id/watchSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_of"
+        android:layout_below="@id/animeName"
+        android:layout_toRightOf="@id/watchCount"
+	/>
+   <TextView
+        android:id="@+id/totalEpisodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total"
+        android:layout_below="@id/animeName"
+        android:layout_toRightOf="@id/watchSlash"
+	/>
+    
+
+</RelativeLayout>

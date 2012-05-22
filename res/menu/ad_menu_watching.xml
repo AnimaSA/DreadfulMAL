@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/setLastWatchedButton"
+          android:title="Set last watched"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/watchedAnEpisodeButton"
+    	  android:title="+1 Watched"
+    	  android:showAsAction="ifRoom"/>
+   	<item android:id="@+id/setScoreButton"
+   		  android:title="Set Score"/>
+    <item android:id="@+id/forceRefreshButton"
+          android:title="Reload" />
+   	<item android:id="@+id/removeFromListButton"
+   		  android:title="Remove from List" />
+</menu> 
