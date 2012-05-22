@@ -23,7 +23,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 	
 	public DatabaseManager(Context c)
 	{
-		super(c, null, null, 0);
+		super(c, DB_NAME, null, DB_VERSION);
 	}
 
 	@Override
