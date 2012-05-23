@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    
     <TextView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
@@ -14,7 +15,7 @@
         android:paddingRight="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="0dp"
-        android:textColor="?android:textColorPrimary"
+        android:textColor="?android:textColorPrimaryInverse"
 	/>
 
     <TextView
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/animeName"
-     	
+     	android:textColor="?android:textColorSecondaryInverse"
         android:text="WATCH STATUS" />
     <TextView
         android:id="@+id/at"
@@ -33,6 +34,7 @@
         android:text="@string/main_at"
         android:layout_below="@id/animeName"
         android:layout_toRightOf="@id/status"
+        android:textColor="?android:textColorSecondaryInverse"
 	/>
    <TextView
         android:id="@+id/watchCount"
@@ -41,6 +43,7 @@
         android:text="epsWatched"
         android:layout_below="@id/animeName"
         android:layout_toRightOf="@id/at"
+        android:textColor="?android:textColorSecondaryInverse"
 	/>
    <TextView
         android:id="@+id/watchSlash"
@@ -49,6 +52,7 @@
         android:text="@string/main_of"
         android:layout_below="@id/animeName"
         android:layout_toRightOf="@id/watchCount"
+        android:textColor="?android:textColorSecondaryInverse"
 	/>
    <TextView
         android:id="@+id/totalEpisodes"
@@ -57,6 +61,7 @@
         android:text="total"
         android:layout_below="@id/animeName"
         android:layout_toRightOf="@id/watchSlash"
+        android:textColor="?android:textColorSecondaryInverse"
 	/>
     
 

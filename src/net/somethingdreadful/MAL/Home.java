@@ -173,7 +173,7 @@ public class Home extends ListActivity {
 	        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 	        
 	        SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.listTypesTitles,
-	                android.R.layout.simple_spinner_dropdown_item);
+	                R.xml.sortspinner);
 	        
 	        OnNavigationListener mOnNavigationListener = new OnNavigationListener() {
 	        	  // Get the same strings provided for the drop-down's ArrayAdapter
