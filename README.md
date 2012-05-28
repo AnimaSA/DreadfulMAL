@@ -4,4 +4,5 @@ ICS Android MAL Client
 
 
 Things to do:
-	Change data storage scheme from private storage (files, PsManager) to Database (DatabaseManager)
+     Change data storage scheme from private storage (files, PsManager) to Database (DatabaseManager)
+     Will work similar to existing
