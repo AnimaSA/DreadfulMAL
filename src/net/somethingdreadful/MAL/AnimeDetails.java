@@ -205,7 +205,7 @@ public class AnimeDetails extends Activity {
 				   watchStatusView.setText("completed");
 			   }
 			   
-			   if (newEpisodesWatchedInt <= episodesTotalInt)
+			   if ((newEpisodesWatchedInt <= episodesTotalInt) || (episodesTotalInt == 0))
 			   {
 				   sManager.prepareValueForSync("episodesWatched", newEpisodesWatchedString);
 				   episodesWatchedView.setText(newEpisodesWatchedString);
